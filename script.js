@@ -17,10 +17,10 @@ const name1El = document.querySelector('#name--1');
 
 let scores, currentScore, activePlayer, playing;
 // taking user names
-// const name1 = prompt("Preetham Say's Insert PLAYER-1 Name?");
-// const name2 = prompt("Preetham say's Insert PLAYER-2 Name?");
-// name0El.textContent = name1;
-// name1El.textContent = name2;
+const name1 = prompt("Preetham Say's Insert PLAYER-1 Name?");
+const name2 = prompt("Preetham say's Insert PLAYER-2 Name?");
+name0El.textContent = name1;
+name1El.textContent = name2;
 
 // Starting conditions
 const init = function () {
