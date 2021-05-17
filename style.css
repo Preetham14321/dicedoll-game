@@ -3,7 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 html {
@@ -37,7 +37,7 @@ main {
 }
 
 .player {
-  flex: 50%;
+  flex: 100%;
   padding: 9rem;
   display: flex;
   flex-direction: column;
@@ -168,4 +168,45 @@ main {
 
 .hidden {
   display: none;
+}
+/* @media screen and (max-width: 1000) {
+  * {
+    background-color: red;
+  }
+  main {
+    width: 31rem;
+    height: 53rem;
+  }
+} */
+@media screen and (max-width: 480px) {
+  /* * {
+    background-color: red;
+  } */
+  main {
+    width: 31rem;
+    height: 53rem;
+  }
+  .player {
+    padding: 0rem;
+  }
+  .name {
+    font-size: 2rem;
+    margin-top: 12rem;
+  }
+  .score {
+    font-size: 5rem;
+  }
+  .btn--new {
+    top: 2rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+  }
+  .current {
+    padding: 0.6rem;
+    margin-bottom: 17rem;
+  }
+  .dice {
+    height: 6rem;
+  }
 }
