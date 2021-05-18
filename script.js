@@ -17,10 +17,10 @@ const name1El = document.querySelector('#name--1');
 
 let scores, currentScore, activePlayer, playing;
 // taking user names
-const name1 = prompt("Preetham Say's Insert PLAYER-1 Name?");
-const name2 = prompt("Preetham say's Insert PLAYER-2 Name?");
-name0El.textContent = name1;
-name1El.textContent = name2;
+// const name1 = prompt("Preetham Say's Insert PLAYER-1 Name?");
+// const name2 = prompt("Preetham say's Insert PLAYER-2 Name?");
+// name0El.textContent = name1;
+// name1El.textContent = name2;
 
 // Starting conditions
 const init = function () {
@@ -81,7 +81,7 @@ btnHold.addEventListener('click', function () {
 
     document.getElementById(`score--${activePlayer}`).textContent =
       scores[activePlayer];
-    diceEl.classList.remove('dice');
+    // diceEl.classList.toggle('dice');
 
     // 2. Check if player's score is >= 100
     if (scores[activePlayer] >= 100) {
